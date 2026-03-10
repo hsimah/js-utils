@@ -1,0 +1,38 @@
+{
+  "name": "js-utils",
+  "version": "1.0.0",
+  "description": "Simple JS Utils for reuse in client side projects",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./isEmpty": {
+      "types": "./dist/isEmpty/isEmpty.d.ts",
+      "default": "./dist/isEmpty/isEmpty.js"
+    },
+    "./sprintf": {
+      "types": "./dist/sprintf/sprintf.d.ts",
+      "default": "./dist/sprintf/sprintf.js"
+    },
+    "./invariant": {
+      "types": "./dist/invariant/invariant.d.ts",
+      "default": "./dist/invariant/invariant.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "vitest run"
+  },
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
